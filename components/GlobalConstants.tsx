@@ -8,8 +8,5 @@ export default {
     size: {
         width: Dimensions.get('window').width,
         height: Dimensions.get('window').height,
-        windowTiles: 11,
-        cellCountWidth: 9,
-        cellCountHeight: 21
     }
 }

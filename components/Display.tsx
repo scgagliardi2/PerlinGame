@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import World from './World';
 import InputsContainer from './inputs/InputsContainer';
+import Border from './Border'
 
 interface Props {
 }
@@ -15,6 +16,7 @@ export default class Display extends React.Component<Props, State> {
       <View style={styles.container}>
         <World />
         <InputsContainer />
+        <Border />
       </View>
     )
   }
@@ -24,11 +26,7 @@ const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
     justifyContent: 'center',
-    padding: 100,
     width: 1000,
-    height: 500,
-    borderColor: 'black',
-    borderRadius: 10,
-    borderWidth: 2
+    height: 500
   },
 });

@@ -4,6 +4,7 @@ import GlobalConstants from '../GlobalConstants';
 import { MoveSetType } from './MoveSet';
 
 interface Props {
+    direction: String
 }
 
 interface State {
@@ -19,13 +20,29 @@ export default class Arrow extends React.Component<Props, State> {
     }
 
     render() {
+        var style: any
+
+        switch (this.props.direction) {
+            case 'up':
+                style = styles.up
+                break
+            case 'down':
+                style = styles.down
+                break
+            case 'left':
+                style = styles.left
+                break
+            case 'right':
+                style = styles.right
+                break
+        }
 
         return (
             <View style={{ alignItems: 'center'}}>
                 <TouchableOpacity 
                     style={styles.Arrow}
                 >
-                    <View ></View>
+                    <View style={style}></View>
                 </TouchableOpacity> 
             </View>
         )

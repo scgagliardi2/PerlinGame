@@ -21,10 +21,10 @@ export default class D_Pad extends React.Component<Props, State> {
     render() {
         return (
             <View style={styles.D_Pad}>
-                <Arrow />
-                <Arrow />
-                <Arrow />
-                <Arrow />
+                <Arrow direction={'up'}/>
+                <Arrow direction={'left'}/>
+                <Arrow direction={'right'}/>
+                <Arrow direction={'down'}/>
             </View>   
         );
     }

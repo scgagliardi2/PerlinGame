@@ -33,6 +33,6 @@ const styles = StyleSheet.create({
     borderBottomEndRadius: 5,
     borderBottomStartRadius: 5,
     backgroundColor: 'red',
-    top: 300,
+    top: 500,
   },
 });

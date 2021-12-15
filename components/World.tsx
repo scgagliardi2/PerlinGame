@@ -8,16 +8,16 @@ export default function World() {
   return (
     <View style={styles.world}>
         <Player />
-        <InputsContainer />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   world: {
-    width: '100%',
-    height: '100%',
+    width: '200%',
+    height: '200%',
     backgroundColor: 'lightgrey',
-    alignItems: 'center'
+    alignItems: 'center',
+    zIndex: 0
   },
 });

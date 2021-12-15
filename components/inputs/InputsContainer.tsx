@@ -37,16 +37,17 @@ export default class InputsContainer extends React.Component<Props, State> {
 const styles = StyleSheet.create({
     InputsContainer: {
         width: '100%',
-        height: 200,
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-between',
         position: 'absolute',
-        bottom: 0
+        bottom: 0,
+        padding: 30,
+        zIndex: 100
     },
     lockMenu: {
         position: 'absolute',
         bottom: 30,
-        left: '45%'
+        left: '48%'
     }
 });
